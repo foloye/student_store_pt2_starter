@@ -7,7 +7,7 @@ const IS_TESTING = process.env.NODE_ENV === "test"
 
 function getDatabaseUri() {
   const dbUser = process.env.DATABASE_USER || "postgres"
-  const dbPass = process.env.DATABASE_PASS ? encodeURI(process.env.DATABASE_PASS) : "postgres"
+  const dbPass = process.env.DATABASE_PASS ? encodeURI(process.env.DATABASE_PASS) : "1590"
   const dbHost = process.env.DATABASE_HOST || "localhost"
   const dbPort = process.env.DATABASE_PORT || 5432
   const dbTestName = process.env.DATABASE_TEST_NAME || "auth_starter_test"
